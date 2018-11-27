@@ -8,15 +8,16 @@
 	</head>
 
 	<body>
+    <h1>BDthèque</h1>
 
-		<h3>Toutes les collections</h3>
+		<h3 class="col">Toutes les collections</h3>
 
-		 <div class="container-fluid">
+		 <div class="container-fluid1">
                     <div class="row">
                       @foreach ($collection as $collection)
                       <div class="col-md-6">
-                        <h3 class="titrePresentation"><i><strong>
-                          <p>{{ $collection->collections_nom }}</p>
+                        <h3 class="titrePresentation1"><i><strong>
+                          <p><span>{{ $collection->collections_nom }}</span></p>
                         </h3></i></strong>
                             <img class='collec' src="{{ $collection->image }}"> 
                             <h4><p><strong>ACHAT : {{ $collection->achat_quantite }}</strong></p></h4>  

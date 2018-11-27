@@ -30,10 +30,15 @@
     </ul>
     <ul class="navbar-nav mr-auto">
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+      <form action="https://localhost:8000" id="myform">
+      <input class="form-control mr-sm-2" type="search" type="text" name="q" value="" placeholder="Rechercher" aria-label="Rechercher">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
     </form>
+    </form>
     </ul>
+
+        
+
       <li class="navbar-nav mr-auto">
         <a class="nav-link" href="http://localhost:8000/connexion">Connexion</a>
       </li>
@@ -41,20 +46,20 @@
 </nav>
 
 
-    <h3>Nouveautés</h3>
+    <h3 class="new"><span>Nouveautés</span></h3>
 
                 <div class="container-fluid">
                     <div class="row">
                       @foreach ($bd as $bd)
                       <div class="col-md-6">
-                        <h3 class="titrePresentation"><i><strong>
-                          <p>{{ $bd->bd_nom }}</p>
-                        </h3></i></strong>
+                        <h4 class="titrePresentation"><i><strong>
+                          <p><span>{{ $bd->bd_nom }}</span></p>
+                        </h4></i></strong>
                             <img src="{{ $bd->url_image }}"> 
-                            <h4><p>{{ $bd->bd_auteur }}</p></h4>  
-                            <h4><p class="sortie"><strong>DATE DE SORTIE : {{ $bd->bd_date_sortie }}</strong></p>
+                            <h5><p>{{ $bd->bd_auteur }}</p></h5>  
+                            <h5><p class="sortie"><strong>DATE DE SORTIE : {{ $bd->bd_date_sortie }}</strong></p>
                             <p><strong>COMMENTAIRES : {{ $bd->bd_commentaires }}</strong></p>
-                            <p><strong>NOTE : {{ $bd->bd_notes }}</strong></p></h4>  
+                            <p><strong>NOTE : {{ $bd->bd_notes }}</strong></p></h5>  
                       </div>
                       @endforeach    
                     </div>

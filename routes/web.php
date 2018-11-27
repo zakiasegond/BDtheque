@@ -19,16 +19,6 @@ Route::get('/connexion', function () {
     return view('connexion');
 });
 
-// Route::get('/collection', function () {
-//     return view('collection');
-// });
-
-
-// Route::get('/decouvrir', function () {
-//     return view('decouvrir');
-// });
-
-
 
 Route::get('/', 'accueil@getAccueil');
 

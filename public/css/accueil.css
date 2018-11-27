@@ -1,7 +1,34 @@
+@font-face
+{
+ font-family: 'Mona_Shark.otf';
+ src: url('Mona_Shark.otf') format('truetype') ;
+}
+
+@font-face
+{
+ font-family: 'Badabb.ttf';
+ src: url('Badabb.ttf') format('truetype') ;
+}
+
+.titrePresentation
+{
+ font-family: 'Mona_Shark';
+ /*padding-top: 60px;*/
+}
+
+.titrePresentation span{
+
+	background:#a9c622;
+    padding:4px 8px;
+}
+
+
+
 h1{
 	text-align: center;
 	Font-Weight: Bold;
 	font-size: 100px;
+	font-family: 'Badabb.ttf';
 	/*padding-top: 50px;*/
 }
 
@@ -21,6 +48,8 @@ h3{
 	Font-Weight: Bold;
 	font-size: 40px;
 	font-style: italic;
+	color: white;
+	/*text-align: center;*/
 }
 
 img{
@@ -29,7 +58,7 @@ img{
 }
 
 .container-fluid{
-	margin-left: 100px;
+	margin-left: 150px;
 }
 
 .sortie{
@@ -39,3 +68,13 @@ img{
 .collec{
 	width: 500px;
 }
+
+.col{
+	text-align: center;
+}
+
+
+.container-fluid1{
+	margin-left: 150px;
+}	
+

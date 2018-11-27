@@ -10,15 +10,13 @@
     </head>
 
     <bodyid="LoginForm">
-        <h1>Connexion</h1>
-
-         
+     <h1>BDthèque</h1>    
 			<div class="container">
 				<h1 class="form-heading"></h1>
 					<div class="login-form">
 						<div class="main-div">
 					    	<div class="panel">
-					   			<h2>Identifiant</h2>
+					   			<h2>Connexion</h2>
 					   			<p>Veuillez s'il vous plait, rentrer votre identifiant et votre mot de passe</p>
 					   		</div>
 
